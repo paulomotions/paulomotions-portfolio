@@ -84,7 +84,7 @@ h2{font-family:var(--display);font-weight:800;font-stretch:112%;font-size:clamp(
 
 /* video grids */
 .grid{display:grid;gap:24px}
-.grid.long{grid-template-columns:minmax(0,1fr)}
+.grid.long{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
 .grid.short{grid-template-columns:repeat(3,minmax(0,1fr))}
 .clip{display:grid;gap:12px;text-decoration:none;min-width:0}
 .frame{position:relative;aspect-ratio:16/9;max-width:100%;border-radius:10px;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
@@ -217,6 +217,7 @@ footer .wrap{padding-block:28px;display:flex;justify-content:space-between;gap:1
    ========================================================= */
 const CONTENT = {
   long: [
+    { id: "v9HIV7ZLobI", title: "", detail: "" },
     { id: "WjF3UQYWFtQ", title: "", detail: "" }
   ],
   short: [
